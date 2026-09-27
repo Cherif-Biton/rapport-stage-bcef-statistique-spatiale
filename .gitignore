@@ -1,0 +1,8 @@
+# Fichiers temporaires et de verrouillage Microsoft Office
+~$*
+*.tmp
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
