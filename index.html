@@ -3,19 +3,153 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rapport du premier thème développé pendant le stage à BCEF Ingénierie & Informatique (Bethsaleel Consulting Études et Formations en Ingénierie et Informatique) </title>
+  <meta name="description" content="Rapport et présentation du stage réalisé à BCEF Ingénierie & Informatique de juillet à septembre 2026, sur la statistique spatiale et les systèmes d'information géographique.">
+  <title>Rapport de stage | BCEF Ingénierie &amp; Informatique</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172b3a;
+      --muted: #5b6c78;
+      --blue: #145b72;
+      --blue-dark: #0d4055;
+      --mint: #d9eee8;
+      --paper: #f5f8f7;
+      --line: #dce6e3;
+      --white: #fff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    .topline { height: 7px; background: linear-gradient(90deg, var(--blue-dark), #4d9b8b); }
+
+    main {
+      width: min(100% - 40px, 900px);
+      margin: 64px auto;
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: var(--blue);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 780px;
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.45rem);
+      letter-spacing: -.045em;
+      line-height: 1.12;
+    }
+
+    .intro {
+      max-width: 700px;
+      margin: 22px 0 0;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .details {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 28px;
+      margin: 26px 0 0;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .details strong { color: var(--ink); }
+
+    .documents {
+      margin-top: 54px;
+      padding: 30px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--white);
+      box-shadow: 0 14px 40px rgb(23 43 58 / 6%);
+    }
+
+    .documents h2 { margin: 0; font-size: 1.3rem; letter-spacing: -.02em; }
+    .documents > p { margin: 5px 0 22px; color: var(--muted); }
+
+    .file-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+
+    .file {
+      display: flex;
+      min-height: 100px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: var(--ink);
+      text-decoration: none;
+      transition: border-color .18s ease, transform .18s ease, box-shadow .18s ease;
+    }
+
+    .file:hover, .file:focus-visible {
+      transform: translateY(-2px);
+      border-color: #8bbeb1;
+      box-shadow: 0 8px 20px rgb(23 43 58 / 8%);
+    }
+
+    .file:focus-visible { outline: 3px solid var(--mint); outline-offset: 3px; }
+    .file-title { display: block; font-weight: 700; }
+    .file-type { display: block; margin-top: 3px; color: var(--muted); font-size: .88rem; }
+    .arrow { color: var(--blue); font-size: 1.3rem; }
+
+    footer { margin-top: 28px; color: var(--muted); font-size: .86rem; }
+
+    @media (max-width: 620px) {
+      main { width: min(100% - 28px, 900px); margin: 42px auto; }
+      .documents { margin-top: 38px; padding: 22px; }
+      .file-list { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
+  <div class="topline" aria-hidden="true"></div>
   <main>
-    <h1>Rapport du premier thème développé pendant le stage à BCEF Ingénierie & Informatique (Bethsaleel Consulting Études et Formations en Ingénierie et Informatique) </h1>
-    <p>Stage réalisé de juillet à septembre 2026.</p>
-    <p>Thème de la présentation : statistique spatiale et systèmes d’information géographique.</p>
+    <header>
+      <p class="eyebrow">Stage de fin de cycle · BCEF</p>
+      <h1>Statistique spatiale et systèmes d’information géographique</h1>
+      <p class="intro">
+        Rapport du premier thème développé pendant mon stage à BCEF Ingénierie &amp; Informatique
+        (Bethsaleel Consulting Études et Formations en Ingénierie et Informatique).
+      </p>
+      <p class="details">
+        <span><strong>Période :</strong> juillet – septembre 2026</span>
+        <span><strong>Documents :</strong> rapport et présentation</span>
+      </p>
+    </header>
 
-    <h2>Documents</h2>
-    <ul>
-      <li><a href="Rapport.docx">Télécharger le rapport de stage (Word)</a></li>
-      <li><a href="rapport_stage_presentation%20%20-%20%20R%C3%A9paration.pptx">Télécharger la présentation (PowerPoint)</a></li>
-    </ul>
+    <section class="documents" aria-labelledby="documents-title">
+      <h2 id="documents-title">Consulter les documents</h2>
+      <p>Ouvrez ou téléchargez les fichiers du stage.</p>
+      <div class="file-list">
+        <a class="file" href="Rapport.docx" download>
+          <span><span class="file-title">Rapport de stage</span><span class="file-type">Document Word · DOCX</span></span>
+          <span class="arrow" aria-hidden="true">↓</span>
+        </a>
+        <a class="file" href="rapport_stage_presentation%20%20-%20%20R%C3%A9paration.pptx" download>
+          <span><span class="file-title">Présentation du thème</span><span class="file-type">Diaporama PowerPoint · PPTX</span></span>
+          <span class="arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <footer>Réalisé dans le cadre d’un stage à BCEF Ingénierie &amp; Informatique.</footer>
   </main>
 </body>
 </html>
